@@ -31,14 +31,17 @@
         return "You Lose! Rock Beats Scissors"
       } else {return "It's a tie!"}
     }
-    let playerSelection = prompt("Enter rock, paper, or scissors")
-    playerSelection = String(playerSelection)
-    playerSelection = playerSelection.toLowerCase()
-    computerSelection = getComputerChoice()
-
-    console.log(playerSelection, computerSelection)
-
-    alert(playRound(playerSelection, computerSelection))
+    for (let i = 0; i < 5; i++){
+      let playerSelection = prompt("Enter rock, paper, or scissors")
+      playerSelection = String(playerSelection)
+      playerSelection = playerSelection.toLowerCase()
+      computerSelection = getComputerChoice()
+  
+      console.log(playerSelection, computerSelection)
+      
+  
+      alert(playRound(playerSelection, computerSelection))
+    }
   </script>
 </body>
 </html>
